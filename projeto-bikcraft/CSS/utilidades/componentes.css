@@ -19,6 +19,16 @@
   font-size: 1.125;
   line-height: 1.35;
   font-family: "Poppins", sans-serif;
+  max-width: max-content;
+}
+
+.buttom.secundario {
+  background: linear-gradient(#212121, #1b1b1b);
+  color: var(--cor-3);
+}
+
+.buttom.secundario:hover {
+  background: linear-gradient(#252525, #1f1e1e);
 }
 
 .buttom:hover {
