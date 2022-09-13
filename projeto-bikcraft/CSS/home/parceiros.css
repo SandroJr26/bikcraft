@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .parceiros li {
