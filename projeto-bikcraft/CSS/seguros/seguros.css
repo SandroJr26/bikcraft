@@ -1,9 +1,9 @@
 .seguros-bg {
-  background: var(--cor-10);
+  background: var(--cor-11) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 40px left 20px;
 }
 
 .seguros {
-  margin: 0 32px;
   padding-top: 60px;
   padding-bottom: 60px;
   display: grid;
@@ -12,15 +12,20 @@
   align-items: center;
 }
 
+#seguros .seguros {
+  padding-top: 0px;
+}
+
 .seguros h2 {
   grid-column: 1/-1;
 }
 
 .seguros-item {
-  background: var(--cor-11);
-  padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  padding: 32px 32px 32px 60px;
+  border-radius: 4px;
+  background-color: var(--cor-12);
 }
 
 .seguros-item h3 {
@@ -35,11 +40,14 @@
 
 .seguros-item ul {
   grid-column: 1/-1;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
+}
+
+.seguros-item li + li {
+  margin-top: 20px;
 }
 
 .seguros-item li {
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   position: relative;
@@ -47,12 +55,11 @@
 
 .seguros-item li::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  left: -21px;
   width: 13px;
   height: 9px;
   background-image: url("../../img/icones/lista.svg");
-  position: absolute;
-  left: -21px;
 }
 
 .seguros-item a {
@@ -60,6 +67,9 @@
 }
 
 @media (max-width: 800px) {
+  .seguros-bg {
+    background: var(--cor-11);
+  }
   .seguros {
     grid-template-columns: 1fr;
   }
