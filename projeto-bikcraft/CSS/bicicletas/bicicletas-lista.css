@@ -23,6 +23,10 @@
   -webkit-overflow-scrolling: touch;
 }
 
+#bicicleta .bicicletas-lista ul {
+  padding: 0 0 20px 0;
+}
+
 #home .bicicletas-lista ul {
   max-width: 1400px;
   padding: 20px;
