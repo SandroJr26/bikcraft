@@ -10,7 +10,6 @@
 //   return objeto;
 // }
 
-
 // function livro(nome, ano, autor) {
 //   var frase = nome + " escrito por " + autor;
 //   const objeto = {
@@ -28,8 +27,6 @@ function livro(nome, ano, autor) {
     frase: nome + " escrito por " + autor,
   };
 }
-
-
 
 const livroRetorno = livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkin");
 
