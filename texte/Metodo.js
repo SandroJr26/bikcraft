@@ -1,6 +1,6 @@
 const ativar = document.querySelector(".ativar");
 
-/** @param {MouseEvent} event */ //Tipo de comentario para ajudar a desenvolver o site
+/** @param {MouseEvent} event */
 function ativarAoClick(event) {
   console.log(event.x);
 }
